@@ -33,12 +33,19 @@ p {
   font-size: 200pt;
   margin-top: 0px;
 }
+
+.vertical-center {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 </style>
 </head>
 <body>
-
-<p id="counter"></p>
-
+    <p id="counter" class="vertical-center"></p>
+</body>
 <script>
 var countDownDate = new Date("Nov 27, 2021 12:00:00").getTime();
 
